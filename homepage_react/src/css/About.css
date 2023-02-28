@@ -1,0 +1,19 @@
+.about-container{
+    padding-left: 0;
+    padding-right: 0;
+    width: 51%;
+}
+
+.markdown {
+    background-color: black;
+    color: #E5E7EB;
+    font-size: 25px;
+
+  }
+  
+
+.markdown a {
+    color: #ff7518;
+    text-decoration: none;
+  }
+  

@@ -1,0 +1,46 @@
+.twitter-icon {
+  color: orange;
+}
+
+.brand-name {
+  color: #ff7518;
+  font-size: 34px;
+  font-weight: bold;
+}
+
+.brand-name:hover {
+  text-decoration: none;
+  cursor: default;
+  color: #ff7518;
+  cursor: pointer;
+}
+
+.categorie {
+  font-size: 26px;
+  color: #ff7518;
+}
+
+.categorie:hover {
+  text-decoration: none;
+  cursor: default;
+  color: #ff7518;
+  cursor: pointer;
+}
+
+.navbar-container {
+  padding-left: 0;
+  padding-right: 0;
+  width: 51%;
+  border-bottom: 3px solid #5a5a5a;
+}
+
+.navbar {
+  background-color: black;
+}
+
+.navbar-nav {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
