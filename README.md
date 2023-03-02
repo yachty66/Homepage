@@ -45,5 +45,19 @@ Personal homepage where I share informations about myself, posts and the project
 - [x] make bottom line fitting
 - [x] center text
 - [x] adjust font size
-- [ ] make background completely black
-
+- [x] make background completely black
+- [x] increase distance between spaces in text - vertical and horizontal
+- [x] make line move with text when shrinking + text below 
+- [x] make headlines in wpure white color (check color matt)
+- [x] make bullet points to grey like matt 
+- [x] same with numbering
+- [x] check if adding images works
+- [x] make color change after link waas clicked work
+- [x] check hoq qoutes look like
+- [x] distance between number and bullets same like distance between two text 
+- [x] add white color to text at respective positions
+- [x] check that responsiveness is working when moving the text
+- [x] fix problem that images occur right 
+- [x] add some appropriate text of mine
+- [x] add social netoworks  
+- [ ] add site posts and if click on posts a site with white main and nav opens up

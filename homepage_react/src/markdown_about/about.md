@@ -1,13 +1,15 @@
-Working on something new.
+You can find a list with the things I am currently working on here TODO ADD LINK.
 
-Previously, I was a software engineer working on open-source Kubernetes at Google, building and maintaining Kubernetes developer tools such as minikube and skaffold. I also worked on machine learning pipelines as a maintainer of the Kubeflow project. Before Google, I worked at The Blackstone Group in NYC. [CommonMark](https://commonmark.org)
 
-I received a BA in Mathematics from Columbia University. I have an MBA from Stanford Graduate School of Business, where I was an Arjay Miller Scholar.
+Previously, I was running a drug business from a small town in east germany and than moved to Berlin where I studied applied computer science. During that time I worked at different companies and startups. In Berlin I lived in different group houses and had a lot of fun with friends. I am looking forward to move into the Bay Area for maximizing good outcomes out of serendepity. 
 
-My email is matt@matt-rickard.com.
+My email is [maxhager28@gmail.com](mailto:maxhager28@gmail.com).
 
 You can find me on:
 
-- LinkedIn
-- GitHub
-- Twitter
+- [GitHub](https://github.com/yachty66)
+- [Goodreads](https://www.goodreads.com/user/show/118878574-max-hager)
+- [Twitter](https://twitter.com/MaxHager66)
+- [Chess](https://www.chess.com/member/homooecochessicus)
+- [Discord](https://discordapp.com/users/[MaxHager#6351]) 
+

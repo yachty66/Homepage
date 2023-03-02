@@ -1,19 +1,79 @@
-.about-container{
-    padding-left: 0;
-    padding-right: 0;
-    width: 51%;
+.about-container {
+  padding-left: 0;
+  padding-right: 0;
+  width: 1100px;
 }
 
 .markdown {
-    background-color: black;
-    color: #E5E7EB;
-    font-size: 25px;
+  color: #d1d5da;
+  font-size: 25px;
+}
 
+.markdown img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
   }
   
+
+.markdown *:not(p) {
+  color: white;
+}
 
 .markdown a {
-    color: #ff7518;
-    text-decoration: none;
-  }
-  
+  color: #ff7518;
+  text-decoration: none;
+}
+
+.markdown a:active {
+  color: #ffff00;
+}
+
+.markdown p {
+  margin: 1.3em 0;
+  line-height: 1.7; 
+}
+
+ul li {
+  margin: 1.3em 0;
+  line-height: 1.7;
+}
+
+ol li {
+  margin: 1.3em 0;
+  line-height: 1.7;
+}
+
+
+.markdown h1,
+.markdown h2,
+.markdown h3,
+.markdown h4,
+.markdown h5,
+.markdown h6 {
+  color: white;
+}
+
+ul {
+  list-style: none; /* Remove default bullets */
+}
+
+ul li::before {
+  content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #757a83; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+ol li::marker {
+  color: #757a83;
+}
+
+blockquote {
+  padding-left: 1em;
+  border-left: 0.2em #ffff00 solid;
+  font-style: italic;
+}

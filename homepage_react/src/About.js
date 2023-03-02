@@ -5,6 +5,8 @@ import remarkMath from "remark-math";
 import Container from "react-bootstrap/Container";
 import "./css/About.css";
 import { BlockMath, InlineMath } from "react-katex";
+import rehypeRaw from 'rehype-raw';
+
 class About extends Component {
   constructor(props) {
     super(props);
@@ -26,6 +28,7 @@ class About extends Component {
         <ReactMarkdown
           className="markdown"
           children={this.state.about}
+          rehypePlugins={[rehypeRaw]}
           remarkPlugins={[remarkMath]}
           components={{
             math: ({ value }) => <BlockMath math={value} />,
