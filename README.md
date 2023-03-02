@@ -70,7 +70,10 @@ Personal homepage where I share informations about myself, posts and the project
 - [x] background black, date white, font orange 
 - [x] fix size of navbar - orient att matt site 
 - [x] fix size post site
-- [ ] add about 
-- [ ] add blocksatz
+- [x] add about 
+- [x] add blocksatz
+- [ ] i am currently try to render the content of the markdown file from the bucket inside od Post.js based on the respective post which was clicked
+- [ ] on click of respective markdown file open a new site which is open a site where the file is rendered
+
 
 as name i take the title from the markdown file and left by i use the date with some js library. continous integration. because everything is on a server 

@@ -9,6 +9,7 @@ import Navigation from "./Header";
 //components LandingPage
 import App from "./App";
 import Archive from "./posts/Posts";
+import Post from "./posts/Post";
 
 
 ReactDOM.render(
@@ -18,6 +19,7 @@ ReactDOM.render(
       <Routes>
         <Route exact path="/" element={<App />} />
         <Route path="/archive" element={<Archive />} />
+        <Route path="/:fileName" element={<Post fileName={fileName} />} />
         {/*<Route path="/product/:id" element={<Product />} />*/}
       </Routes>
     </Router>
