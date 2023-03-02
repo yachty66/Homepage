@@ -14,7 +14,10 @@ function Header() {
             Max Hager
           </Navbar.Brand>
           <Nav>
-            <LinkContainer to="/shop">
+            <LinkContainer to="/">
+              <a className="categorie">About</a>
+            </LinkContainer>
+            <LinkContainer to="/archive">
               <a className="categorie">Posts</a>
             </LinkContainer>
             <a className="categorie">Projects</a>
@@ -24,8 +27,8 @@ function Header() {
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
                 y="0px"
-                width="35"
-                height="35"
+                width="22"
+                height="22"
                 viewBox="0 0 48 48"
               >
                 <path

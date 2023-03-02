@@ -60,4 +60,17 @@ Personal homepage where I share informations about myself, posts and the project
 - [x] fix problem that images occur right 
 - [x] add some appropriate text of mine
 - [x] add social netoworks  
-- [ ] add site posts and if click on posts a site with white main and nav opens up
+- [x] add site posts and if click on posts a site with white main and nav opens up
+- [x] archive folder with a sample md 
+- [x] add md file to google cloud storage
+- [x] display current date and take as header filename 
+- [x] add container like in about section but cut off at the end of my nanme
+- [x] make correct date and also same format and also name
+- [x] make media query that date is on same position like name
+- [x] background black, date white, font orange 
+- [x] fix size of navbar - orient att matt site 
+- [x] fix size post site
+- [ ] add about 
+- [ ] add blocksatz
+
+as name i take the title from the markdown file and left by i use the date with some js library. continous integration. because everything is on a server 

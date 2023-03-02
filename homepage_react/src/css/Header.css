@@ -4,8 +4,10 @@
 
 .brand-name {
   color: #ff7518;
-  font-size: 34px;
+  font-size: 20px;
   font-weight: bold;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .brand-name:hover {
@@ -18,8 +20,11 @@
 .categorie {
   text-decoration: none;
   align-self: flex-end;
-  font-size: 26px;
+  font-size: 16px;
   color: #ff7518;
+  height: auto;
+
+
 }
 
 
@@ -33,7 +38,7 @@
 .navbar-container {
   padding-left: 0;
   padding-right: 0;
-  width: 1100px;
+  width: 720px;
 }
 
 .navbar {
@@ -41,7 +46,7 @@
 }
 
 .navbar-nav {
-  width: 470px;
+  width: 370px;
   display: flex;
   justify-content: space-between;
 }
