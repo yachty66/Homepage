@@ -75,6 +75,7 @@ Personal homepage where I share informations about myself, posts and the project
 - [x] on click of respective markdown file open a new site which is open a site where the file is rendered
 - [x] apply the markdown settings from about page 
 - [x] display all files out from the archive folder
+- [ ] add only the files to the archive folder which are not already in there
 - [ ] check that the last md file which i added is on the top of the website 
 
 as name i take the title from the markdown file and left by i use the date with some js library. continous integration. because everything is on a server 
