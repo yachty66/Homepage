@@ -19,7 +19,8 @@ ReactDOM.render(
       <Routes>
         <Route exact path="/" element={<App />} />
         <Route path="/archive" element={<Archive />} />
-        <Route path="/:fileName" element={<Post fileName={fileName} />} />
+        {/*<Route exact path="/:id" render={(props) => <Post globalStore={this.props.globalStore} {...props} /> } />*/}
+        <Route path="/:fileName" element={<Post />} />
         {/*<Route path="/product/:id" element={<Product />} />*/}
       </Routes>
     </Router>

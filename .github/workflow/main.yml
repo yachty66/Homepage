@@ -1,0 +1,26 @@
+name: Deploy to Google Cloud Storage
+
+on:
+  push:
+    branches:
+      - main
+
+env:
+  GOOGLE_APPLICATION_CREDENTIALS: ${{ secrets.GOOGLE_APPLICATION_CREDENTIALS }}
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Build application
+      run: |
+        # Add your build commands here
+
+    - name: Deploy to Google Cloud Storage
+      run: |
+        # Add your deployment commands here
+        gsutil cp -n -r archive/* gs://archive_homepage

@@ -28,7 +28,6 @@ const Posts = () => {
   }, []);
 
   const handleClick = (fileName) => {
-    console.log(fileName);
     navigate(`/${fileName}`)
   };
 

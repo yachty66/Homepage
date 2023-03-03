@@ -4,6 +4,7 @@ import remarkMath from "remark-math";
 import Container from "react-bootstrap/Container";
 import { BlockMath, InlineMath } from "react-katex";
 import rehypeRaw from "rehype-raw";
+import "../css/Markdown.css";
 
 class Post extends Component {
   constructor(props) {
@@ -14,12 +15,16 @@ class Post extends Component {
 
   componentWillMount() {
     const fetchFile = async (fileName) => {
-        console.log(fileName)
-      const response = await fetch(
-        `https://www.googleapis.com/storage/v1/b/archive_homepage/o/${fileName}`
+      const path = window.location.pathname.slice(1);
+      const fileN = `${path}.md`;
+      const metadataResponse = await fetch(
+        `https://www.googleapis.com/storage/v1/b/archive_homepage/o/${fileN}`
       );
-      const file = await response.text();
-      this.setState({ post: file });
+
+      const metadata = await metadataResponse.json();
+      const contentsResponse = await fetch(metadata.mediaLink);
+      const contents = await contentsResponse.text();
+      this.setState({ post: contents });
     };
     fetchFile(this.props.fileName);
   }
