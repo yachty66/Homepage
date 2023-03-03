@@ -16,6 +16,9 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
+    - name: Set up gcloud Cloud SDK environment
+      uses: google-github-actions/setup-gcloud@v1.1.0
+
     - name: Build application
       run: |
         # Add your build commands here
@@ -24,3 +27,5 @@ jobs:
       run: |
         # Add your deployment commands here
         gsutil cp -n -r archive/* gs://archive_homepage
+
+        
