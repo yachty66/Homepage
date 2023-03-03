@@ -21,6 +21,14 @@ jobs:
         credentials_json: ${{ secrets.GOOGLE_APPLICATION_CREDENTIALS }}
         service_account: 'google-application-credentials@homepage-379410.iam.gserviceaccount.com'
 
+    - name: Install gsutil
+      run: |
+        echo "deb http://packages.cloud.google.com/apt gcsfuse-bionic main" | tee /etc/apt/sources.list.d/gcsfuse.list
+        curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
+        apt-get update
+        apt-get install gcsfuse
+
+
 
     - name: Mount the bucket
       run: |
