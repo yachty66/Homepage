@@ -5,30 +5,21 @@ on:
     branches:
       - main
 
-env:
-  GOOGLE_APPLICATION_CREDENTIALS: ${{ secrets.GOOGLE_APPLICATION_CREDENTIALS }}
-
 jobs:
-  deploy:
+  job_id:
     runs-on: ubuntu-latest
+    permissions:
+      contents: 'read'
+      id-token: 'write'
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
-
     - id: 'auth'
-      name: 'Authenticate to Google Cloud'
       uses: 'google-github-actions/auth@v1'
       with:
-        credentials_json: '${{ secrets.GOOGLE_APPLICATION_CREDENTIALS}}'
+        service_account: 'google-application-credentials@homepage-379410.iam.gserviceaccount.com'
 
-    - name: Build application
-      run: |
-        # Add your build commands here
-
-    - name: Deploy to Google Cloud Storage
-      run: |
-        # Add your deployment commands here
-        gsutil cp -n -r archive/* gs://archive_homepage
-
-        
+    - id: 'upload-folder'
+      uses: 'google-github-actions/upload-cloud-storage@v1'
+      with:
+        path: '/archive'
+        destination: 'gs://archive_homepage'
