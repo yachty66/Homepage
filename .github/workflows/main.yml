@@ -20,6 +20,10 @@ jobs:
         credentials_json: ${{ secrets.GOOGLE_APPLICATION_CREDENTIALS }}
         service_account: 'google-application-credentials@homepage-379410.iam.gserviceaccount.com'
 
+    - name: Check the path
+      run: |
+        echo $GITHUB_WORKSPACE/
+
     - id: 'upload-folder'
       uses: 'google-github-actions/upload-cloud-storage@v1'
       with:
