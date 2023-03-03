@@ -17,16 +17,19 @@ class Post extends Component {
     const fetchFile = async (fileName) => {
       const path = window.location.pathname.slice(1);
       const fileN = `${path}.md`;
+      console.log(fileN);
       const metadataResponse = await fetch(
-        `https://www.googleapis.com/storage/v1/b/archive_homepage/o/${fileN}`
+        `https://www.googleapis.com/storage/v1/b/archive_homepage/o/archive%2F${fileN}`
       );
-
+      
       const metadata = await metadataResponse.json();
       const contentsResponse = await fetch(metadata.mediaLink);
       const contents = await contentsResponse.text();
+      
+      console.log(contents);
       this.setState({ post: contents });
     };
-    fetchFile(this.props.fileName);
+    fetchFile(this.props.fileName);    
   }
 
   render() {

@@ -12,12 +12,12 @@ const Posts = () => {
   useEffect(() => {
     const fetchFiles = async () => {
       const response = await fetch(
-        "https://www.googleapis.com/storage/v1/b/archive_homepage/o?fields=items(name,timeCreated)"
+        "https://www.googleapis.com/storage/v1/b/archive_homepage/o?prefix=archive/&fields=items(name,timeCreated)"
       );
       const data = await response.json();
 
       const fileData = data.items.map((item) => ({
-        name: item.name.slice(0, -3),
+        name: item.name.slice(8, -3),
         date: new Date(item.timeCreated),
       }));
 
@@ -28,7 +28,7 @@ const Posts = () => {
   }, []);
 
   const handleClick = (fileName) => {
-    navigate(`/${fileName}`)
+    navigate(`/${fileName}`);
   };
 
   return (
@@ -40,7 +40,7 @@ const Posts = () => {
             {String(file.date.getDate()).padStart(2, "0")}-
             {file.date.getFullYear().toString().slice(-2)}
           </span>
-            <span className="file-name">{file.name}</span>
+          <span className="file-name">{file.name}</span>
         </div>
       ))}
     </Container>
