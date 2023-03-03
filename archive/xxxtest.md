@@ -73,6 +73,7 @@ Personal homepage where I share informations about myself, posts and the project
 - [x] add about 
 - [x] add blocksatz
 - [x] on click of respective markdown file open a new site which is open a site where the file is rendered
-- [ ] apply the markdown settings from about page 
+- [ ] push only files to bucket which are new 
+- [ ] change filter in bucket in a way that latest date is displayed on top
 
 as name i take the title from the markdown file and left by i use the date with some js library. continous integration. because everything is on a server 
