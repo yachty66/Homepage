@@ -22,7 +22,7 @@ jobs:
 
     - name: Check the path
       run: |
-        echo $GITHUB_WORKSPACE/
+        echo $GITHUB_WORKSPACE/archive
 
     - id: 'upload-folder'
       uses: 'google-github-actions/upload-cloud-storage@v1'
