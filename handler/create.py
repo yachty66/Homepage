@@ -4,7 +4,7 @@ import os
 import datetime
 
 # Replace <BUCKET_NAME> and <OBJECT_NAME> with the name of your bucket and the name of the JSON file
-url = "https://www.googleapis.com/storage/v1/b/archive_homepage/o/data.json?alt=media"
+url = "https://www.googleapis.com/storage/v1/b/archive_homepage/o/data_index.json?alt=media"
 
 # Send the request to retrieve the JSON file
 response = requests.get(url)
