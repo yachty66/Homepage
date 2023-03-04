@@ -7,6 +7,7 @@ on:
 
 env:
   GOOGLE_APPLICATION_CREDENTIALS: ${{ secrets.GOOGLE_APPLICATION_CREDENTIALS }}
+  BACKUP_CLIENT_ID: ${{ secrets.BACKUP_CLIENT_ID }}
 
 jobs:
   build:
