@@ -3,7 +3,7 @@ name: Add Files to JSON
 on:
   push:
     paths:
-      - archive/
+      - main
 
 env:
   GOOGLE_APPLICATION_CREDENTIALS: ${{ secrets.GOOGLE_APPLICATION_CREDENTIALS }}
