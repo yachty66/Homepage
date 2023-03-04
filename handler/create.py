@@ -26,6 +26,9 @@ json_data = json.loads(blob.download_as_string().decode('utf-8'))
 
 # Loop through the local archive directory
 files = [f for f in os.listdir("archive") if os.path.isfile(os.path.join("archive", f))]
+print("files:")
+print(files)
+print(30*"-")
 for file in files:
     # Check if the file exists in the JSON data
     found = False
@@ -37,6 +40,8 @@ for file in files:
     # If the file does not exist in the JSON data, add it
     if not found:
         json_data["files"].append({"name": file, "timestamp": str(datetime.datetime.now())})
-
+print("json_data:")
+print(json_data)
+print(30*"-")
 # Write the updated JSON data back to the Google Cloud Storage bucket
 blob.upload_from_string(json.dumps(json_data), 'application/json')
