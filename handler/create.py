@@ -14,7 +14,7 @@ data = response.json()
 
 # Get a list of files in the archive folder
 files = [f for f in os.listdir("archive") if os.path.isfile(os.path.join("archive", f))]
-
+print(files)
 # Loop through the list of files
 for file in files:
     # Check if the file exists in the JSON data
