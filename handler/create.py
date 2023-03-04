@@ -6,15 +6,14 @@ import datetime
 from gcloud import storage
 from oauth2client.service_account import ServiceAccountCredentials
 
-
 # Replace <BUCKET_NAME> and <OBJECT_NAME> with the name of your bucket and the name of the JSON file
 url = "https://www.googleapis.com/storage/v1/b/archive_homepage/o/data_index.json?alt=media"
 
+credentials = ServiceAccountCredentials.from_json_keyfile_name('credentials.json', 'https://www.googleapis.com/auth/devstorage.read_write')
 
-print(os.environ['GOOGLE_APPLICATION_CREDENTIALS'])
-    
+print(credentials) 
 
-# Get the path to the credentials.json file
+'''# Get the path to the credentials.json file
 credentials = json.loads(os.environ['GOOGLE_APPLICATION_CREDENTIALS'])
 print("hex")
 # Use the credentials to authenticate with Google Cloud Storage
@@ -45,5 +44,5 @@ if credentials is not None:
     # Write the updated JSON data back to the Google Cloud Storage bucket
     response = requests.put(url, json=data, headers={"Authorization": "Bearer " + credentials["access_token"]})
     print(response.text)
-    response.raise_for_status()
+    response.raise_for_status()'''
 
