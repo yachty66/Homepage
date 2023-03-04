@@ -9,10 +9,13 @@ from oauth2client.service_account import ServiceAccountCredentials
 # Replace <BUCKET_NAME> and <OBJECT_NAME> with the name of your bucket and the name of the JSON file
 url = "https://www.googleapis.com/storage/v1/b/archive_homepage/o/data_index.json?alt=media"
 
-load_credentials=(os.environ['GOOGLE_APPLICATION_CREDENTIALS'])
+with open(os.environ['GOOGLE_APPLICATION_CREDENTIALS'], 'r') as file:
+    credentials_dict = json.load(file)
+
+
 
 credentials = ServiceAccountCredentials.from_json_keyfile_dict(
-    load_credentials
+    credentials_dict
 )
 
 print(credentials)
