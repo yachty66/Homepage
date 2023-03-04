@@ -7,14 +7,8 @@ import datetime
 url = "https://www.googleapis.com/storage/v1/b/archive_homepage/o/data_index.json?alt=media"
 
 # Get the path to the credentials.json file
-credentials_file = os.environ.get("GOOGLE_APPLICATION_CREDENTIALS", None)
-
-# Load the credentials from the file
-credentials = None
-if credentials_file is not None:
-    with open(credentials_file, "r") as f:
-        credentials = json.load(f)
-print(credentials)
+credentials = json.loads(os.environ['GOOGLE_APPLICATION_CREDENTIALS'])
+print("hex")
 # Use the credentials to authenticate with Google Cloud Storage
 if credentials is not None:
     print("success")
