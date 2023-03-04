@@ -1,14 +1,10 @@
-import requests
-import json
 import os
+import json
 import datetime
-
 from gcloud import storage
 from oauth2client.service_account import ServiceAccountCredentials
 
-# Replace <BUCKET_NAME> and <OBJECT_NAME> with the name of your bucket and the name of the JSON file
-url = "https://www.googleapis.com/storage/v1/b/archive_homepage/o/data_index.json?alt=media"
-
+# Load the Google Cloud Storage credentials
 credentials_dict = {
     'type': 'service_account',
     'client_id': os.environ['BACKUP_CLIENT_ID'],
@@ -16,43 +12,31 @@ credentials_dict = {
     'private_key_id': os.environ['BACKUP_PRIVATE_KEY_ID'],
     'private_key': os.environ['BACKUP_PRIVATE_KEY'].replace('\\n', '\n'),
 }
-
 credentials = ServiceAccountCredentials.from_json_keyfile_dict(
     credentials_dict
 )
 
-print(credentials)
+# Connect to the Google Cloud Storage bucket
+client = storage.Client(credentials=credentials, project='Homepage')
+bucket = client.get_bucket('archive_homepage')
 
-'''# Get the path to the credentials.json file
-credentials = json.loads(os.environ['GOOGLE_APPLICATION_CREDENTIALS'])
-print("hex")
-# Use the credentials to authenticate with Google Cloud Storage
-if credentials is not None:
-    print("success")
-    # Send the request to retrieve the JSON file
-    response = requests.get(url, headers={"Authorization": "Bearer " + credentials["private_key"]})
+# Read the JSON file from Google Cloud Storage
+blob = bucket.blob('data_index.json')
+json_data = json.loads(blob.download_as_string().decode('utf-8'))
 
-    # Load the JSON data from the response
-    data = response.json()
+# Loop through the local archive directory
+files = [f for f in os.listdir("archive") if os.path.isfile(os.path.join("archive", f))]
+for file in files:
+    # Check if the file exists in the JSON data
+    found = False
+    for obj in json_data["files"]:
+        if obj["name"] == file:
+            found = True
+            break
 
-    # Get a list of files in the archive folder
-    files = [f for f in os.listdir("archive") if os.path.isfile(os.path.join("archive", f))]
+    # If the file does not exist in the JSON data, add it
+    if not found:
+        json_data["files"].append({"name": file, "timestamp": str(datetime.datetime.now())})
 
-    # Loop through the list of files
-    for file in files:
-        # Check if the file exists in the JSON data
-        found = False
-        for obj in data["files"]:
-            if obj["name"] == file:
-                found = True
-                break
-
-        # If the file does not exist in the JSON data, add it
-        if not found:
-            data["files"].append({"name": file, "timestamp": str(datetime.datetime.now())})
-
-    # Write the updated JSON data back to the Google Cloud Storage bucket
-    response = requests.put(url, json=data, headers={"Authorization": "Bearer " + credentials["access_token"]})
-    print(response.text)
-    response.raise_for_status()'''
-
+# Write the updated JSON data back to the Google Cloud Storage bucket
+blob.upload_from_string(json.dumps(json_data), 'application/json')
