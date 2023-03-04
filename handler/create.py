@@ -17,6 +17,7 @@ if credentials_file is not None:
 
 # Use the credentials to authenticate with Google Cloud Storage
 if credentials is not None:
+    print("success")
     # Send the request to retrieve the JSON file
     response = requests.get(url, headers={"Authorization": "Bearer " + credentials["access_token"]})
 
@@ -41,4 +42,6 @@ if credentials is not None:
 
     # Write the updated JSON data back to the Google Cloud Storage bucket
     response = requests.put(url, json=data, headers={"Authorization": "Bearer " + credentials["access_token"]})
+    print(response.text)
     response.raise_for_status()
+
