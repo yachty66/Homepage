@@ -1,1 +1,3 @@
 requests
+--upgrade oauth2client
+gcloud
