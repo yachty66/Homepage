@@ -45,3 +45,6 @@ print(json_data)
 print(30*"-")
 # Write the updated JSON data back to the Google Cloud Storage bucket
 blob.upload_from_string(json.dumps(json_data), 'application/json')
+
+print(json.dumps(json_data))
+#status
