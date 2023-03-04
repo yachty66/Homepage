@@ -14,7 +14,7 @@ credentials = None
 if credentials_file is not None:
     with open(credentials_file, "r") as f:
         credentials = json.load(f)
-
+print(credentials)
 # Use the credentials to authenticate with Google Cloud Storage
 if credentials is not None:
     print("success")
