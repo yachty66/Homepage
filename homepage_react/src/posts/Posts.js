@@ -12,14 +12,21 @@ const Posts = () => {
   useEffect(() => {
     const fetchFiles = async () => {
       const response = await fetch(
-        "https://www.googleapis.com/storage/v1/b/archive_homepage/o?prefix=archive/&fields=items(name,timeCreated)"
+        `https://www.googleapis.com/storage/v1/b/archive_homepage/o/data_index.json?alt=media`
       );
-      const data = await response.json();
+      const jsonData = await response.json();
+      const fileData = [];
+      const files = jsonData.files;
+      for (let i = 0; i < files.length; i++) {
+        const file = files[i];
+        const fileInfo = {
+          name: file.name.slice(0, -3),
+          date: new Date(file.timestamp),
+        };
 
-      const fileData = data.items.map((item) => ({
-        name: item.name.slice(8, -3),
-        date: new Date(item.timeCreated),
-      }));
+        fileData.push(fileInfo);
+      }
+      fileData.sort((a, b) => b.date - a.date);
 
       setFiles(fileData);
     };
