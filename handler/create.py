@@ -3,8 +3,16 @@ import json
 import os
 import datetime
 
+from gcloud import storage
+from oauth2client.service_account import ServiceAccountCredentials
+
+
 # Replace <BUCKET_NAME> and <OBJECT_NAME> with the name of your bucket and the name of the JSON file
 url = "https://www.googleapis.com/storage/v1/b/archive_homepage/o/data_index.json?alt=media"
+
+
+print(os.environ['GOOGLE_APPLICATION_CREDENTIALS'])
+    
 
 # Get the path to the credentials.json file
 credentials = json.loads(os.environ['GOOGLE_APPLICATION_CREDENTIALS'])
