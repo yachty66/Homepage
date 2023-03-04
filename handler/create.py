@@ -13,7 +13,7 @@ print("hex")
 if credentials is not None:
     print("success")
     # Send the request to retrieve the JSON file
-    response = requests.get(url, headers={"Authorization": "Bearer " + credentials["access_token"]})
+    response = requests.get(url, headers={"Authorization": "Bearer " + credentials["private_key"]})
 
     # Load the JSON data from the response
     data = response.json()
