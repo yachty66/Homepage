@@ -16,7 +16,7 @@ class Projects extends Component {
 
   componentWillMount() {
     fetch(
-      "https://www.googleapis.com/storage/v1/b/archive_homepage/o/home.md?alt=media"
+      "https://www.googleapis.com/storage/v1/b/archive_homepage/o/projects.md?alt=media"
     )
       .then((response) => response.text())
       .then((text) => {

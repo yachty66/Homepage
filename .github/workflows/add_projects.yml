@@ -1,0 +1,27 @@
+name: Deploy to Google Cloud Storage projects markdown
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  job_id:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: "read"
+      id-token: "write"
+
+    steps:
+      - uses: "actions/checkout@v3"
+      - id: "auth"
+        uses: "google-github-actions/auth@v1"
+        with:
+          credentials_json: ${{ secrets.GOOGLE_APPLICATION_CREDENTIALS }}
+          service_account: "google-application-credentials@homepage-379410.iam.gserviceaccount.com"
+
+      - id: "upload-file"
+        uses: "google-github-actions/upload-cloud-storage@v1"
+        with:
+          path: "projects.md"
+          destination: "projects.md"
