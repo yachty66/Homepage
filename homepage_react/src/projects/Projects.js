@@ -5,8 +5,7 @@ import Container from "react-bootstrap/Container";
 import { BlockMath, InlineMath } from "react-katex";
 import rehypeRaw from "rehype-raw";
 
-import "../css/Projects.css";
-import markdownToc from 'markdown-toc';
+import "../css/Projects.css"
 
 class Projects extends Component {
   constructor(props) {
@@ -21,8 +20,24 @@ class Projects extends Component {
     )
       .then((response) => response.text())
       .then((text) => {
-        const toc = markdownToc(text).content;
-        this.setState({ projects: `${toc}\n${text}` });
+        const lines = text.split("\n");
+        let toc = "";
+        let inCodeBlock = false;
+        for (let i = 0; i < lines.length; i++) {
+          const line = lines[i];
+          if (!inCodeBlock && line.startsWith("#")) {
+            const level = line.lastIndexOf("#") + 1;
+            const title = line.slice(level).trim();
+            const slug = title.toLowerCase().replace(/[^\w]+/g, "-");
+            const id = `toc-${slug}`;
+            toc += `${"  ".repeat(level - 1)}- [${title}](#${id})\n`;
+            lines[i] = `${line} <a id="${id}"></a>`;
+          } else if (line.startsWith("```")) {
+            inCodeBlock = !inCodeBlock;
+          }
+        }
+        const markdownWithToc = `${toc}\n${lines.join("\n")}`;
+        this.setState({ projects: markdownWithToc });
       });
   }
 
