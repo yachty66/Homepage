@@ -12,29 +12,58 @@ class Post extends Component {
 
     this.state = { post: null };
   }
-
   componentWillMount() {
     const fetchFile = async (fileName) => {
-      const path = window.location.pathname.slice(1);
+      const path = window.location.pathname.slice(1).replace(/%20/g, ' ');
       const fileN = `${path}.md`;
-      console.log(fileN);
       const metadataResponse = await fetch(
         `https://www.googleapis.com/storage/v1/b/archive_homepage/o/archive%2F${fileN}`
       );
-      
+
       const metadata = await metadataResponse.json();
       const contentsResponse = await fetch(metadata.mediaLink);
       const contents = await contentsResponse.text();
-      
-      console.log(contents);
+
       this.setState({ post: contents });
+
+      const { title, date } = this.setTitleAndDate(fileN);
+      this.setState({ title, date });
+      console.log(this.title);
     };
-    fetchFile(this.props.fileName);    
+    fetchFile(this.props.fileN);
   }
 
+  setTitleAndDate = (fileName) => {
+    //const date = "";
+    //const title = "";
+
+    fetch(
+      "https://www.googleapis.com/storage/v1/b/archive_homepage/o/data_index.json?alt=media"
+    )
+      .then((response) => response.json())
+      .then((data) => {
+        const files = data.files;
+        const file = files.find((file) => file.name === fileName);
+        if (file) {
+          const fileDate = new Date(file.timestamp);
+          const date =
+            fileDate.toLocaleString("default", { month: "short" }) +
+            " " +
+            fileDate.getDate() +
+            ", " +
+            fileDate.getFullYear();
+          const title = fileName.slice(0, -3);
+          this.setState({ title, date });
+        }
+      });
+  };
+
   render() {
+    const { title, date } = this.state;
     return (
       <Container className="post-container mt-5">
+        <h1 style={{ fontSize: "20px", color: "white" }}>{title}</h1>
+        <p style={{ fontSize: "14px", color: "#d1d5da" }}>{date}</p>
         <ReactMarkdown
           className="markdown"
           children={this.state.post}

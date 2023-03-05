@@ -20,7 +20,9 @@ function Header() {
             <LinkContainer to="/archive">
               <a className="categorie">Posts</a>
             </LinkContainer>
-            <a className="categorie">Projects</a>
+            <LinkContainer to="/projects">
+              <a className="categorie">Projects</a>
+            </LinkContainer>
             <a className="categorie">Subscribe</a>
             <a className="categorie">
               <svg
