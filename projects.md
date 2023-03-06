@@ -16,34 +16,27 @@ I started this list in summer 2022 and paused some time. The list has several ad
 If I can recognize a interest from other people I would like to create a application out of this idea where people can add there projects in a predefined form. Let me know if you are interested in something like that.
 
 ## Currently doing
-### Project name 
-- Date started
-- Description
 
 ### Reading books
-- No date available.
-- Aiming for ~50 pages a day except Sundays. [Goodreads](https://www.goodreads.com/review/list/118878574?ref=nav_mybooks).
+- N/A
+- Aiming for ~50 pages a day. [Goodreads](https://www.goodreads.com/review/list/118878574?ref=nav_mybooks).
 
 ### Bachelor thesis
-- No date available.
-- Named Entity Recognitino with Weakly Labelled Data
-
-### Distributed systems
-- 13.10.2022
-- Uni module 
+- 01.12.2022
+- Named Entity Recognition mit schwach annotierten Daten
 
 ### Component based development
 - 13.10.2022
 - Uni module
 
-### Project management
-- 13.10.2022
-- Uni module
+- ## Myers Briggs Open Source
+- 23.02.2023
+- Reverse engineering MyersBriggs personality type test
 
-### Max's Book
-- 29.08.2022
-- Personal hompage in one markdown file in a book format. Serves as project overview. The theory is that probabilities to finish a project increase if the project is written down.
+- ## Homepage
 
+- 28.02.2023 
+- My personal homepage.
 
 ## Finished
 
@@ -53,7 +46,7 @@ If I can recognize a interest from other people I would like to create a applica
 - Python script which displays the last 10 clibboard results - [Github](https://github.com/yachty66/PythonWorkflowScripts/tree/main/ClipboardHistory).
 
 ### Start Google Chrome in full screen
-- No date available.
+- N/A.
 - 03.09.2022
 - Python solution for starting Google Chrome in full screen.
 
@@ -112,7 +105,7 @@ If I can recognize a interest from other people I would like to create a applica
 - 18.09.2022
 - We build a sleep coach for Alexa with GPT-3. [Devpost](https://devpost.com/software/nox-sleep-coach?ref_content=contribution-prompt&ref_feature=engagement&ref_medium=email&utm_campaign=contribution-prompt&utm_content=contribution_reminder&utm_medium=email&utm_source=transactional#app-team).
 
-### \\Slash 
+### Slash 
 - 24.09.2022
 - 25.09.2022
 - Hackathon organized from students of [CODE University](https://code.berlin/en/). We created a Avatar in a virtual environment backed by a language model. 
@@ -137,22 +130,37 @@ If I can recognize a interest from other people I would like to create a applica
 - 16.10.2022
 - Chrome extension (not published) which is scraping my current projects from this side and addds them all on every new tab in GChrome.
 
-### Internship
+### Internship KIWI 
 - 04.10.2022
-- Internship at [KIWI Biolab](https://kiwi-biolab.de/)
 - 14.11.2022
+- Internship at [KIWI Biolab](https://kiwi-biolab.de/)
+
+### Project management
+- 13.10.2022
+- 31.01.2023
+- Uni module
+
+### Distributed systems
+- 13.10.2022
+- 27.01.2023
+- Uni module 
  
+### Max's Book
+- 29.08.2022
+- N/A
+- Personal hompage in one markdown file in a book format. Serves as project overview. The theory is that probabilities to finish a project increase if the project is written down.
+
 ## Discontinued
 
 ### Machine learning from scratch
-- No date available.
+- N/A.
 - 29.08.2022
 - Python implementation of the most popular machine learning algorithms [Github](https://github.com/yachty66/MachineLearningFromScratch/blob/main/notes.md#1-writing-down-all-the-algorithms-i-wanna-implement). I implemented two of ten.
 
 ### RosalindMl
 - 01.09.2022
-- Taking five tasks from [Rosalind](https://rosalind.info/about/) and formulating them into a machine learning problem. Solve problem by myself and creation of an notebook for others.
 - 25.09.2022
+- Taking five tasks from [Rosalind](https://rosalind.info/about/) and formulating them into a machine learning problem. Solve problem by myself and creation of an notebook for others.
 
 ### Upwork
 - 01.09.2022
