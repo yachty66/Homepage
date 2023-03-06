@@ -80,7 +80,9 @@ Personal homepage where I share informations about myself, posts and the project
 - [x] remove bullet point from ## headers
 - [x] remove max book and toc and projects header
 - [x] remove samples and rather write a intro and explain the system
-- [ ] workflow so that pushes are getting reflected
+- [x] workflow so that pushes are getting reflected
+- [ ] update the whole content from the project file so that it looks more professional 
+- [ ] create a subspription site
 
 as name i take the title from the markdown file and left by i use the date with some js library. continous integration. because everything is on a server 
 
