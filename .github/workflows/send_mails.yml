@@ -30,4 +30,4 @@ jobs:
         pip install -r handler/requirements.txt
 
     - name: Run Python script
-      run: python handler/mails.py
+      run: python handler/mailsRR.py
