@@ -92,8 +92,12 @@ Personal homepage where I share informations about myself, posts and the project
 - [x] remove docker shit
 - [x] put server online which is printing the email into the logs 
 - [x] setup a server on gcp which is hosting my python script so that i can send the mail to that server and the script is manipulating the json file
-- [ ] add to prev script functionality that confirmation mail is send to given mail
-- [ ] test if it works 
+- [x] add to prev script functionality that confirmation mail is send to given mail
+- [x] test if it works 
+- [ ] setup create yaml
+- [ ] create py script for sending mails
+- [ ] check if it works 
+- [ ] schedule for daily 24:00
 
 
 as name i take the title from the markdown file and left by i use the date with some js library. continous integration. because everything is on a server 
