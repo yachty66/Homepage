@@ -21,7 +21,15 @@ bucket = client.get_bucket('archive_homepage')
 blob = bucket.blob('data_index.json')
 json_data = json.loads(blob.download_as_string().decode('utf-8'))
 
-print(json_data)
+current_time = datetime.datetime.now()
+names = []
+for file in json_data['files']:
+    timestamp = datetime.datetime.strptime(file['timestamp'], '%Y-%m-%d %H:%M:%S.%f')
+    if current_time - timestamp < datetime.timedelta(hours=24):
+        names.append(file['name'])
+
+print(names)
+
 
 '''files = [f for f in os.listdir("archive") if os.path.isfile(os.path.join("archive", f))]
 
