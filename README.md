@@ -81,8 +81,20 @@ Personal homepage where I share informations about myself, posts and the project
 - [x] remove max book and toc and projects header
 - [x] remove samples and rather write a intro and explain the system
 - [x] workflow so that pushes are getting reflected
-- [ ] update the whole content from the project file so that it looks more professional 
-- [ ] create a subspription site
+- [x] update the whole content from the project file so that it looks more professional 
+- [x] create a subspription site
+    - [x] add subscription button and above add "Subscribe for getting short posts about engineering, startups, and everything else in your inbox."
+    - [x] add margin like matt
+    - [x] on hover make subscribe button darker  
+- [x] setup flask app from youtube guy and test if this works 
+- [x] look into the logs and try to nachvollziehen
+- [x] find the central point for all this apps so that i can delete each respective app eventually
+- [x] remove docker shit
+- [x] put server online which is printing the email into the logs 
+- [x] setup a server on gcp which is hosting my python script so that i can send the mail to that server and the script is manipulating the json file
+- [ ] add to prev script functionality that confirmation mail is send to given mail
+- [ ] test if it works 
+
 
 as name i take the title from the markdown file and left by i use the date with some js library. continous integration. because everything is on a server 
 

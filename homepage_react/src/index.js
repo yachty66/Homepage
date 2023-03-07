@@ -11,6 +11,7 @@ import App from "./App";
 import Archive from "./posts/Posts";
 import Post from "./posts/Post";
 import Projects from "./projects/Projects";
+import Subscription from './subscription/Subscription';
 
 
 ReactDOM.render(
@@ -23,6 +24,7 @@ ReactDOM.render(
         {/*<Route exact path="/:id" render={(props) => <Post globalStore={this.props.globalStore} {...props} /> } />*/}
         <Route path="/:fileName" element={<Post />} />
         <Route path="/projects" element={<Projects />} />
+        <Route path="/subscription" element={<Subscription />} />
         {/*<Route path="/product/:id" element={<Product />} />*/}
       </Routes>
     </Router>

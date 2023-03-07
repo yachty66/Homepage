@@ -23,7 +23,9 @@ function Header() {
             <LinkContainer to="/projects">
               <a className="categorie">Projects</a>
             </LinkContainer>
+            <LinkContainer to="/subscription">
             <a className="categorie">Subscribe</a>
+            </LinkContainer>
             <a className="categorie">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
