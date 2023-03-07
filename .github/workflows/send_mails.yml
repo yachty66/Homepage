@@ -4,6 +4,13 @@ on:
   schedule:
     - cron: '* * * * *'
 
+env:
+  GOOGLE_APPLICATION_CREDENTIALS: ${{ secrets.GOOGLE_APPLICATION_CREDENTIALS }}
+  BACKUP_CLIENT_ID: ${{ secrets.BACKUP_CLIENT_ID }}
+  BACKUP_CLIENT_EMAIL: ${{ secrets.BACKUP_CLIENT_EMAIL }}
+  BACKUP_PRIVATE_KEY: ${{ secrets.BACKUP_PRIVATE_KEY }}
+  BACKUP_PRIVATE_KEY_ID: ${{ secrets.BACKUP_PRIVATE_KEY_ID }}
+
 jobs:
   build:
     runs-on: ubuntu-latest
