@@ -28,7 +28,8 @@ for file in json_data['files']:
     if current_time - timestamp < datetime.timedelta(hours=24):
         names.append(file['name'])
 
-print(names)
+#for number of new posts send to all emails from emails.json the respective post as html like matt format. take the respective post from the folder archive/ and rendder in html
+
 
 
 '''files = [f for f in os.listdir("archive") if os.path.isfile(os.path.join("archive", f))]
