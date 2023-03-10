@@ -95,9 +95,12 @@ Personal homepage where I share informations about myself, posts and the project
 - [x] add to prev script functionality that confirmation mail is send to given mail
 - [x] test if it works 
 - [x] setup create yaml
+- [ ] add margins to emails 
+- [ ] create header like matt
 - [ ] create py script for sending mails
 - [ ] check if it works 
 - [ ] schedule for daily 24:00
+- [ ] share johannes my projects list and point to his twitter link in my project list 
 
 
 as name i take the title from the markdown file and left by i use the date with some js library. continous integration. because everything is on a server 
