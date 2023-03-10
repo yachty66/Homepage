@@ -10,7 +10,13 @@ import os
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
-def send_email(to_address, subject, body):
+def send_email(to_address, subject):
+    
+    '''
+    **Click the link below to see the latest update:**
+    Headline    
+    BY MAX HAGER - DATE - VIEW ONLINE ->
+    '''
     gmail_user = 'maxhager28@gmail.com'
     gmail_password ='sqvsppkatqlvwtsd'
 
@@ -18,8 +24,27 @@ def send_email(to_address, subject, body):
     msg['From'] = gmail_user
     msg['To'] = to_address
     msg['Subject'] = subject
+    
+    subject = subject[:-3]
+    
+    if ' ' not in subject:
+        subject_url = subject
+    else:
+        subject_url = subject.replace(' ', '%20')
+        
+    view_online_url = f'http://localhost:3000/{subject_url}'
+
 
     # Set the body of the email to be HTML
+    # now i need to write an algo who is getting the name of the post.
+    
+    #http://localhost:3000/newwwww%20copy%203
+    #http://localhost:3000/nuefile
+    
+    #if subject does not contain spaces than create + http://localhost:3000/ + subjectname else replace each space with %20 and do the same
+    
+    
+    
     body = f"""
     <html>
         <head>
@@ -28,15 +53,23 @@ def send_email(to_address, subject, body):
                     width: 565px;
                     margin: 0 auto;
                 }}
+                .subject {{
+                    font-size: 42px;
+                }}
+                .subject a {{
+                    color: black;
+                }}
             </style>
         </head>
         <body>
             <div class="container">
-                {body}
+                <p><strong>Here is the latest update for you:</strong></p>
+                <p class="subject"><a href="{view_online_url}">{subject}</a></p>
             </div>
         </body>
     </html>
     """
+    
     msg.attach(MIMEText(body, 'html'))
 
     try:
@@ -49,7 +82,6 @@ def send_email(to_address, subject, body):
         print(f'Email sent to {to_address}')
     except Exception as e:
         print(f'Something went wrong while sending the email: {e}')
-
 
 credentials_dict = {
     'type': 'service_account',
@@ -92,7 +124,7 @@ for name in names:
     html_content = markdown2.markdown(markdown_content)
     for i in emails_data.keys():
         to_address = i
-        subject = 'Update: ' + name
-        body = 'Here is the latest update for you.\n\n'
-        send_email(to_address, subject, body + html_content)
+        subject = name
+        body = 'Here is the latest update for you:\n\n'
+        send_email(to_address, subject)
 

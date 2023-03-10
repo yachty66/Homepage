@@ -73,42 +73,7 @@ Personal homepage where I share informations about myself, posts and the project
 - [x] add about 
 - [x] add blocksatz
 - [x] on click of respective markdown file open a new site which is open a site where the file is rendered
-- [x] apply the markdown settings from about page 
-- [x] display all files out from the archive folder
-- [x] add only the files to the archive folder which are not already in there
-- [x] check that the last md file which i added is on the top of the website 
-- [x] remove bullet point from ## headers
-- [x] remove max book and toc and projects header
-- [x] remove samples and rather write a intro and explain the system
-- [x] workflow so that pushes are getting reflected
-- [x] update the whole content from the project file so that it looks more professional 
-- [x] create a subspription site
-    - [x] add subscription button and above add "Subscribe for getting short posts about engineering, startups, and everything else in your inbox."
-    - [x] add margin like matt
-    - [x] on hover make subscribe button darker  
-- [x] setup flask app from youtube guy and test if this works 
-- [x] look into the logs and try to nachvollziehen
-- [x] find the central point for all this apps so that i can delete each respective app eventually
-- [x] remove docker shit
-- [x] put server online which is printing the email into the logs 
-- [x] setup a server on gcp which is hosting my python script so that i can send the mail to that server and the script is manipulating the json file
-- [x] add to prev script functionality that confirmation mail is send to given mail
-- [x] test if it works 
-- [x] setup create yaml
-- [x] add margins to emails 
-- [ ] make filename as header
-- [ ] add BY MAX HAGER - DATE - VIEW ONLINE -> 
-- [ ] create header like matt
-- [ ] test how it looks like if i add headers, links, bullets, images and adjust in case 
-- [ ] change font
-- [ ] create py script for sending mails
-- [ ] check if it works 
-- [ ] schedule for daily 24:00
-- [ ] share johannes my projects list and point to his twitter link in my project list 
-
+- [ ] push only files to bucket which are new 
+- [ ] change filter in bucket in a way that latest date is displayed on top
 
 as name i take the title from the markdown file and left by i use the date with some js library. continous integration. because everything is on a server 
-
-## Future
-
-- build a working prototype for the project overview site which could be used from other people. the application would look like the project site is looking now besides that in the header section is a form where you can add new entries. https://psycnet.apa.org/record/2002-15790-003
