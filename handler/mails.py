@@ -32,18 +32,8 @@ def send_email(to_address, subject):
     else:
         subject_url = subject.replace(' ', '%20')
         
-    view_online_url = f'http://localhost:3000/{subject_url}'
-
-
-    # Set the body of the email to be HTML
-    # now i need to write an algo who is getting the name of the post.
-    
-    #http://localhost:3000/newwwww%20copy%203
-    #http://localhost:3000/nuefile
-    
-    #if subject does not contain spaces than create + http://localhost:3000/ + subjectname else replace each space with %20 and do the same
-    
-    
+    #TODO change to real url
+    view_online_url = f'http://localhost:3000/{subject_url}'    
     
     body = f"""
     <html>

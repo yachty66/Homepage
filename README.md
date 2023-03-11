@@ -96,14 +96,11 @@ Personal homepage where I share informations about myself, posts and the project
 - [x] test if it works 
 - [x] setup create yaml
 - [x] add margins to emails 
-- [ ] make filename as header
-- [ ] add BY MAX HAGER - DATE - VIEW ONLINE -> 
-- [ ] create header like matt
-- [ ] test how it looks like if i add headers, links, bullets, images and adjust in case 
-- [ ] change font
-- [ ] create py script for sending mails
-- [ ] check if it works 
+- [x] create py script for sending mails
+- [x] check if it works 
 - [ ] schedule for daily 24:00
+- [ ] change color of links from about page to yellow if clicked 
+- [ ] change hover color submit button  
 - [ ] share johannes my projects list and point to his twitter link in my project list 
 
 
