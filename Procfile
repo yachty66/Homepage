@@ -1,2 +1,2 @@
-web: cd homepage_react && npm start
+web: npm start
 

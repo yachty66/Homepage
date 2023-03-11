@@ -1,20 +1,13 @@
 .about-container {
   padding-left: 0;
   padding-right: 0;
-  width: 720px;
+  width: 1100px;
 }
 
 .markdown {
+  background-color: black;
   color: #d1d5da;
-  font-size: 16px;
-  text-align: justify;
-}
-
-.markdown img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
+  font-size: 25px;
 }
 
 .markdown *:not(p) {
@@ -44,6 +37,7 @@ ol li {
   margin: 1.3em 0;
   line-height: 1.7;
 }
+
 
 .markdown h1,
 .markdown h2,
