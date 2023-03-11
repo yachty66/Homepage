@@ -1,0 +1,43 @@
+.subscription-container {
+  width: 720px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text {
+  color: #d1d5da;
+  font-size: 16px;
+  text-align: justify;
+}
+
+#inlineFormInputName {
+  background-color: black;
+  border-color: #ff7518;
+  color: #757a83;
+  height: 53px;
+  width: 246px;
+}
+
+#inlineFormInputName:focus {
+    color: #d1d5da;
+  }
+  
+
+button.submit-button {
+    font-size: 16px;
+  height: 53px;
+  background-color: #ff7518;
+  border-color: #ff7518;
+  color: black;
+  margin-left: 13px;
+  width: 117px;
+}
+
+button.submit-button:hover {
+    background-color: #cc5d00;
+    border-color: #cc5d00;
+    color: black;
+  }
+  

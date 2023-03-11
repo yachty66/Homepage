@@ -1,0 +1,5 @@
+homepage_react/node_modules
+homepage_react/public/credentials.json
+testing/
+python_server/secrets.py
+python_server/main.py
