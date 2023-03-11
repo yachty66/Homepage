@@ -1,111 +1,70 @@
-# Homepage
+# Getting Started with Create React App
 
-## Projects Description
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Personal homepage where I share informations about myself, posts and the projects I am working on. I offer a newsletter that is sent out once a week and summarizes the posts and projects I've been working on over the past week. The idea is to pass this newsletter on to my family as well to keep them up to date.
+## Available Scripts
 
-## Overview
+In the project directory, you can run:
 
-- [x] create a header witht my name, about, posts, projects and subscribe + twitter in the format like matt rickard
-- [ ] create a main section which is supporting full markdown functionality and add some text for the about section
-- [ ] create a universal class or something where i can change the color of the font everywhere
-- [ ] create a posts section where each entry gets automatically the date of today added to. headline gets created via parsing from header of markdown file 
-- [ ] create a first post who demonstrates code blocks, images, bullet points, lists, distances and equations and on the bottom add a subscribe button in the matt style
-- [ ] add my projects site (need to make it completely new)
-- [ ] share it to my family and to my friends (also daan because he once had the idea of creating a newsletter)
-- [ ] best case build it as reuseable framework for other people because i would love to see other people tracking their projects and its a unique frame work which i havtn seen yet so really interesting. perhaps i can even build a small simple gui which makes it super simple adding your projects 
-- [ ] create post for myersbriggs project and share to Jan 
-- [ ] share the project tracking page to christina cacioppo
-- [ ] share to matt and thank him for inspiration 
+### `npm start`
 
-## Steps 
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-- [x] create repo 
-- [x] create a react app 
-- [x] add same header like matt rickard but with my categories 
-    - [x] add all my categories 
-    - [x] same font size 
-    - [x] change to fist from mouse when on link 
-    - [x] add line under header 
-    - [x] add distance to right and left
-    - [x] add distance between name and categories
-    - [x] add my universal orange 
-    - [x] change background navbar to same black like matt rickard 
-    - [x] add spacing between navbar elements
-    - [x] reduce size tiwttter icon
-    - [x] adjust line exact to container
-- [x] create a js file for the about page
-- [x] render the file with black background
-- [x] create a folder for md files
-- [x] add a md file with some content
-- [x] render this md file so that the content appears 
-- [x] change the style of my links to my orange and remove the underline
-- [x] make background black
-- [x] make font white
-- [x] make bottom line fitting
-- [x] center text
-- [x] adjust font size
-- [x] make background completely black
-- [x] increase distance between spaces in text - vertical and horizontal
-- [x] make line move with text when shrinking + text below 
-- [x] make headlines in wpure white color (check color matt)
-- [x] make bullet points to grey like matt 
-- [x] same with numbering
-- [x] check if adding images works
-- [x] make color change after link waas clicked work
-- [x] check hoq qoutes look like
-- [x] distance between number and bullets same like distance between two text 
-- [x] add white color to text at respective positions
-- [x] check that responsiveness is working when moving the text
-- [x] fix problem that images occur right 
-- [x] add some appropriate text of mine
-- [x] add social netoworks  
-- [x] add site posts and if click on posts a site with white main and nav opens up
-- [x] archive folder with a sample md 
-- [x] add md file to google cloud storage
-- [x] display current date and take as header filename 
-- [x] add container like in about section but cut off at the end of my nanme
-- [x] make correct date and also same format and also name
-- [x] make media query that date is on same position like name
-- [x] background black, date white, font orange 
-- [x] fix size of navbar - orient att matt site 
-- [x] fix size post site
-- [x] add about 
-- [x] add blocksatz
-- [x] on click of respective markdown file open a new site which is open a site where the file is rendered
-- [x] apply the markdown settings from about page 
-- [x] display all files out from the archive folder
-- [x] add only the files to the archive folder which are not already in there
-- [x] check that the last md file which i added is on the top of the website 
-- [x] remove bullet point from ## headers
-- [x] remove max book and toc and projects header
-- [x] remove samples and rather write a intro and explain the system
-- [x] workflow so that pushes are getting reflected
-- [x] update the whole content from the project file so that it looks more professional 
-- [x] create a subspription site
-    - [x] add subscription button and above add "Subscribe for getting short posts about engineering, startups, and everything else in your inbox."
-    - [x] add margin like matt
-    - [x] on hover make subscribe button darker  
-- [x] setup flask app from youtube guy and test if this works 
-- [x] look into the logs and try to nachvollziehen
-- [x] find the central point for all this apps so that i can delete each respective app eventually
-- [x] remove docker shit
-- [x] put server online which is printing the email into the logs 
-- [x] setup a server on gcp which is hosting my python script so that i can send the mail to that server and the script is manipulating the json file
-- [x] add to prev script functionality that confirmation mail is send to given mail
-- [x] test if it works 
-- [x] setup create yaml
-- [x] add margins to emails 
-- [x] create py script for sending mails
-- [x] check if it works 
-- [ ] schedule for daily 24:00
-- [ ] change color of links from about page to yellow if clicked 
-- [ ] change hover color submit button  
-- [ ] share johannes my projects list and point to his twitter link in my project list 
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
+### `npm test`
 
-as name i take the title from the markdown file and left by i use the date with some js library. continous integration. because everything is on a server 
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-## Future
+### `npm run build`
 
-- build a working prototype for the project overview site which could be used from other people. the application would look like the project site is looking now besides that in the header section is a form where you can add new entries. https://psycnet.apa.org/record/2002-15790-003
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
