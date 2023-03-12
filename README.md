@@ -103,6 +103,7 @@ Personal homepage where I share informations about myself, posts and the project
     - [x] try with custom domain 
 - [x] schedule for daily 24:00
 - [x] fix that posts are not displayed
+- [ ] make a development branch and change content to dev content 
 - [ ] if email is already in email list or email not an valid email "Something went wrong." in red else "Success. You are on the list" in green
     - close to done --> currently try to understand why i always get red error where i should get green 
 - [ ] check that email appears only once after adding twice. check that second times red something went wrong and if no valid email address was added error appears 
