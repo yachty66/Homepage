@@ -8,6 +8,8 @@ import Row from "react-bootstrap/Row";
 
 function Subscription() {
   const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [messageType, setMessageType] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -23,9 +25,12 @@ function Subscription() {
       if (!response.ok) {
         throw new Error("Network response was not ok");
       }
-      const responseData = await response.json();
-      console.log(responseData);
+
+      setMessageType("success");
+      setMessage("Success. You are on the list.");
     } catch (error) {
+      setMessageType("error");
+      setMessage("Something went wrong.");
       console.error(`Fetch Error: ${error}`);
     }
   };
@@ -56,6 +61,15 @@ function Subscription() {
           </Col>
         </Row>
       </Form>
+      {message && (
+        <p
+          className={`mt-3 ${
+            messageType === "success" ? "text-success" : "text-danger"
+          }`}
+        >
+          {message}
+        </p>
+      )}
     </Container>
   );
 }
