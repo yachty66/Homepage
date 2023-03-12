@@ -99,8 +99,8 @@ Personal homepage where I share informations about myself, posts and the project
 - [x] create py script for sending mails
 - [x] check if it works 
 - [ ] deploy react app and add continous development to it
-    - [ ] check first if it works with .io domain
-    - [ ] try with custom domain 
+    - [x] check first if it works with .io domain
+    - [x] try with custom domain 
 - [ ] schedule for daily 24:00
 - [ ] change color of links from about page to yellow if clicked 
 - [ ] change hover color submit button  
