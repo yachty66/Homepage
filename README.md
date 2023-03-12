@@ -101,8 +101,13 @@ Personal homepage where I share informations about myself, posts and the project
 - [ ] deploy react app and add continous development to it
     - [x] check first if it works with .io domain
     - [x] try with custom domain 
-- [ ] schedule for daily 24:00
+- [x] schedule for daily 24:00
+- [ ] fix that posts are not displayed
+- [ ] check that when in archive new file that it appears on site
 - [ ] change color of links from about page to yellow if clicked 
+- [ ] on click of max hager go back zo about site 
+- [ ] remove white hover from max hager 
+- [ ] add twitter 
 - [ ] change hover color submit button  
 - [ ] share johannes my projects list and point to his twitter link in my project list 
 
