@@ -26,7 +26,7 @@ function Subscription() {
         throw new Error("Network response was not ok");
       }
       const responseData = await response.json();
-      console.log(responseData.status);
+      console.log(responseData);
       if (responseData.status === "valid") {
         setMessageType("success");
         setMessage("Success. You are on the list.");
