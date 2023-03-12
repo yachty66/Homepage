@@ -25,9 +25,14 @@ function Subscription() {
       if (!response.ok) {
         throw new Error("Network response was not ok");
       }
-
-      setMessageType("success");
-      setMessage("Success. You are on the list.");
+      const responseData = await response.json();
+      if (responseData.status === "valid") {
+        setMessageType("success");
+        setMessage("Success. You are on the list.");
+      } else {
+        setMessageType("error");
+        setMessage("Something went wrong.");
+      }
     } catch (error) {
       setMessageType("error");
       setMessage("Something went wrong.");
