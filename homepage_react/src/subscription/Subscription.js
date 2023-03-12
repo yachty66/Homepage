@@ -10,9 +10,11 @@ function Subscription() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [messageType, setMessageType] = useState("");
+  const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true);
     try {
       const response = await fetch("https://homepage-379410.ew.r.appspot.com/add_email", {
         method: "POST",
@@ -39,13 +41,16 @@ function Subscription() {
       setMessage("Something went wrong.");
       console.error(`Fetch Error: ${error}`);
     }
+    finally {
+      setLoading(false);
+    }
   };
 
   return (
     <Container className="subscription-container mt-5">
       <p className="text">
         Subscribe for getting short posts about engineering, startups, and
-        everything else in your inbox. test
+        everything else in your inbox.
       </p>
       <Form onSubmit={handleSubmit}>
         <Row className="align-items-center mt-3">
@@ -67,6 +72,7 @@ function Subscription() {
           </Col>
         </Row>
       </Form>
+      {loading && <p className="mt-3">Loading...</p>}
       {message && (
         <p
           className={`mt-3 ${
