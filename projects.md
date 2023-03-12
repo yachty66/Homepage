@@ -29,19 +29,17 @@ If I can recognize a interest from other people I would like to create a applica
 - 13.10.2022
 - Uni module
 
-- ## Myers Briggs Open Source
+### Myers Briggs Open Source
 - 23.02.2023
 - Reverse engineering MyersBriggs personality type test
 
-- ## Homepage
+### Homepage
 - 28.02.2023 
 - My personal homepage.
 
-- ## Daily Paper Summaries on Twitter
+### Daily Paper Summaries on Twitter
 - 07.03.2023
 - Summarizing paper on Twitter once a day. Inspiration via [@johannes_hage](https://twitter.com/johannes_hage).
-
-- ## Test
 
 ## Finished
 
