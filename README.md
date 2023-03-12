@@ -105,9 +105,12 @@ Personal homepage where I share informations about myself, posts and the project
 - [x] fix that posts are not displayed
 - [x] if email is already in email list or email not an valid email "Something went wrong." in red else "Success. You are on the list" in green
 - [x] check that email appears only once after adding twice. check that second times red something went wrong and if no valid email address was added error appears 
-- [ ] create workflow which checks every 6 hours if new project information and adds them
-
-- [ ] check that each workflow is working
+- [ ] check that each workflows are working
+    - [ ] on push project ste is getting updated if new entries
+    - [ ] add titles of new articles with add_json yml 
+    - [ ] via main.yml add new pushed articles to the bucket
+    - [ ] check everyday 24:00 if new posts if yes send all users new post
+- [ ] when reload on subdomain it shouldnt happen an error 
 
 - [ ] change color of links from about page to yellow if clicked 
 - [ ] add handpointer for all clickable links
