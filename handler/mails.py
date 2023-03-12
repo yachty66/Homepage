@@ -10,12 +10,7 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
 def send_email(to_address, subject):
-    
-    '''
-    **Click the link below to see the latest update:**
-    Headline    
-    BY MAX HAGER - DATE - VIEW ONLINE ->
-    '''
+
     gmail_user = 'maxhager28@gmail.com'
     gmail_password ='sqvsppkatqlvwtsd'
 
@@ -31,8 +26,7 @@ def send_email(to_address, subject):
     else:
         subject_url = subject.replace(' ', '%20')
         
-    #TODO change to real url
-    view_online_url = f'http://localhost:3000/{subject_url}'    
+    view_online_url = f'https://maxhager.xyz/{subject_url}'    
     
     body = f"""
     <html>

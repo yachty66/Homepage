@@ -50,7 +50,7 @@ If I can recognize a interest from other people I would like to create a applica
 - Python script which displays the last 10 clibboard results - [Github](https://github.com/yachty66/PythonWorkflowScripts/tree/main/ClipboardHistory).
 
 ### Start Google Chrome in full screen
-- N/A.
+- N/A
 - 03.09.2022
 - Python solution for starting Google Chrome in full screen.
 
@@ -157,7 +157,7 @@ If I can recognize a interest from other people I would like to create a applica
 ## Discontinued
 
 ### Machine learning from scratch
-- N/A.
+- N/A
 - 29.08.2022
 - Python implementation of the most popular machine learning algorithms [Github](https://github.com/yachty66/MachineLearningFromScratch/blob/main/notes.md#1-writing-down-all-the-algorithms-i-wanna-implement). I implemented two of ten.
 

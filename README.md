@@ -102,14 +102,30 @@ Personal homepage where I share informations about myself, posts and the project
     - [x] check first if it works with .io domain
     - [x] try with custom domain 
 - [x] schedule for daily 24:00
-- [ ] fix that posts are not displayed
-- [ ] check that when in archive new file that it appears on site
+- [x] fix that posts are not displayed
+- [ ] if email is already in email list or email not an valid email "Something went wrong." in red else "Success. You are on the list" in green
+- [ ] check that email appears only once after adding twice. check that second times red something went wrong and if no valid email address was added error appears 
+- [ ] create workflow which checks every 6 hours if new project information and adds them
+
+- [ ] check that each workflow is working
+
 - [ ] change color of links from about page to yellow if clicked 
-- [ ] on click of max hager go back zo about site 
+- [ ] add handpointer for all clickable links
+- [ ] check grammatic on about page
+- [ ] check grammatic on projects page
+- [ ] on click of max hager go back to about site and not add #home if max hager is clicked
 - [ ] remove white hover from max hager 
 - [ ] add twitter 
 - [ ] change hover color submit button  
+- [ ] remove blue border around input button 
+- [ ] add icon and tabname
+- [ ] checkout how listing in google looks like and if necessary adjust 
+- [ ] Create readme which is describing each functionality like how the posts work and how the subscribe button works 
+
+## Publishing
+
 - [ ] share johannes my projects list and point to his twitter link in my project list 
+- [ ] write post about blogging site 
 
 
 as name i take the title from the markdown file and left by i use the date with some js library. continous integration. because everything is on a server 
