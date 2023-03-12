@@ -26,8 +26,8 @@ function Subscription() {
         throw new Error("Network response was not ok");
       }
       const responseData = await response.json();
-      console.log(responseData);
-      if (responseData.status === "valid") {
+      console.log(responseData.message);
+      if (responseData.message === "valid") {
         setMessageType("success");
         setMessage("Success. You are on the list.");
       } else {
@@ -45,7 +45,7 @@ function Subscription() {
     <Container className="subscription-container mt-5">
       <p className="text">
         Subscribe for getting short posts about engineering, startups, and
-        everything else in your inbox.
+        everything else in your inbox. test
       </p>
       <Form onSubmit={handleSubmit}>
         <Row className="align-items-center mt-3">
