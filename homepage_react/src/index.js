@@ -20,11 +20,11 @@ ReactDOM.render(
       <Navigation />
       <Routes>
         <Route exact path="/" element={<App />} />
+        <Route exact path="/:id" render={(props) => <Post globalStore={this.props.globalStore} {...props} /> } />
         <Route path="/archive" element={<Archive />} />
-        {/*<Route exact path="/:id" render={(props) => <Post globalStore={this.props.globalStore} {...props} /> } />*/}
         <Route path="/:fileName" element={<Post />} />
         <Route path="/projects" element={<Projects />} />
-        <Route path="/subscription" element={<Subscription />} />
+<Route path="/subscription" element={<Subscription />} />
         {/*<Route path="/product/:id" element={<Product />} />*/}
       </Routes>
     </Router>

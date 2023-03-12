@@ -10,7 +10,7 @@ const Routing = () => {
   return (
     <Routes>
       <Route exact path="/" component={App} />
-      <Route path="/archive" component={Posts} />
+      {<Route path="/archive" component={Posts} />}
     </Routes>
   );
 };
