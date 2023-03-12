@@ -103,9 +103,8 @@ Personal homepage where I share informations about myself, posts and the project
     - [x] try with custom domain 
 - [x] schedule for daily 24:00
 - [x] fix that posts are not displayed
-- [ ] if email is already in email list or email not an valid email "Something went wrong." in red else "Success. You are on the list" in green
-    - close to done --> currently try to understand why i always get red error where i should get green 
-- [ ] check that email appears only once after adding twice. check that second times red something went wrong and if no valid email address was added error appears 
+- [x] if email is already in email list or email not an valid email "Something went wrong." in red else "Success. You are on the list" in green
+- [x] check that email appears only once after adding twice. check that second times red something went wrong and if no valid email address was added error appears 
 - [ ] create workflow which checks every 6 hours if new project information and adds them
 
 - [ ] check that each workflow is working
