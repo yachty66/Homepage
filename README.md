@@ -112,7 +112,7 @@ Personal homepage where I share informations about myself, posts and the project
     - [x] check everyday 24:00 if new posts if yes send all users new post
 - [x] when reload on subdomain it shouldnt happen an error 
 
-- [ ] change color of links from about page to yellow if clicked 
+- [x] change color of links from about page to yellow if clicked 
 - [ ] add handpointer for all clickable links
 - [ ] check grammatic on about page
 - [ ] check grammatic on projects page
