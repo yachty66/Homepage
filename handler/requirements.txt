@@ -1,4 +1,3 @@
 requests
 oauth2client
 gcloud
-smtplib

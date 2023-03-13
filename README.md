@@ -122,6 +122,7 @@ Personal homepage where I share informations about myself, posts and the project
 - [x] remove blue border around input button 
 - [x] add icon and tabname
 - [x] delete all trash from my posts
+- [ ] fix broken workflows
 - [ ] write a blog post and publish. 
 
 
