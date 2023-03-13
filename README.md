@@ -121,8 +121,9 @@ Personal homepage where I share informations about myself, posts and the project
 - [x] change hover color submit button  
 - [x] remove blue border around input button 
 - [x] add icon and tabname
+- [x] delete all trash from my posts
 - [ ] write a blog post and publish. 
-- [ ] delete all trash from my posts
+
 
 ## Publishing
 
