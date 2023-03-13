@@ -111,7 +111,6 @@ Personal homepage where I share informations about myself, posts and the project
     - [x] via main.yml add new pushed articles to the bucket
     - [x] check everyday 24:00 if new posts if yes send all users new post
 - [x] when reload on subdomain it shouldnt happen an error 
-
 - [x] change color of links from about page to yellow if clicked 
 - [x] add handpointer for all clickable links 
 - [x] check grammatic on about page
@@ -122,7 +121,8 @@ Personal homepage where I share informations about myself, posts and the project
 - [x] change hover color submit button  
 - [x] remove blue border around input button 
 - [x] add icon and tabname
-- [ ] Create readme which is describing each functionality like how the posts work and how the subscribe button works 
+- [ ] write a blog post and publish. 
+- [ ] delete all trash from my posts
 
 ## Publishing
 
