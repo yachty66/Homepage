@@ -50,7 +50,7 @@ function Subscription() {
     <Container className="subscription-container mt-5">
       <p className="text">
         Subscribe for getting short posts about engineering, startups, and
-        everything else in your inbox. TEST
+        everything else in your inbox.
       </p>
       <Form onSubmit={handleSubmit}>
         <Row className="align-items-center mt-3">

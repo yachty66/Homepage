@@ -106,10 +106,10 @@ Personal homepage where I share informations about myself, posts and the project
 - [x] if email is already in email list or email not an valid email "Something went wrong." in red else "Success. You are on the list" in green
 - [x] check that email appears only once after adding twice. check that second times red something went wrong and if no valid email address was added error appears 
 - [ ] check that each workflows are working
-    - [ ] on push project ste is getting updated if new entries
-    - [ ] add titles of new articles with add_json yml 
-    - [ ] via main.yml add new pushed articles to the bucket
-    - [ ] check everyday 24:00 if new posts if yes send all users new post
+    - [x] on push project ste is getting updated if new entries
+    - [x] add titles of new articles with add_json yml 
+    - [x] via main.yml add new pushed articles to the bucket
+    - [x] check everyday 24:00 if new posts if yes send all users new post
 - [ ] when reload on subdomain it shouldnt happen an error 
 
 - [ ] change color of links from about page to yellow if clicked 
