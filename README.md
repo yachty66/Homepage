@@ -110,7 +110,7 @@ Personal homepage where I share informations about myself, posts and the project
     - [x] add titles of new articles with add_json yml 
     - [x] via main.yml add new pushed articles to the bucket
     - [x] check everyday 24:00 if new posts if yes send all users new post
-- [ ] when reload on subdomain it shouldnt happen an error 
+- [x] when reload on subdomain it shouldnt happen an error 
 
 - [ ] change color of links from about page to yellow if clicked 
 - [ ] add handpointer for all clickable links
