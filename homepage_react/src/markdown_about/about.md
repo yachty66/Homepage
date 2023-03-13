@@ -1,8 +1,8 @@
-You can find a list with the things I am currently working on [here](some link to add).
+You can find a list with the things I am currently working on [here](http://localhost:3000/projects).
 
-Previously, I was running a drug business from a small town in east germany and than moved to Berlin where I studied applied computer science. During that time I worked at different companies and startups. In Berlin I lived in different group houses and had a lot of fun with friends. I am looking forward to move into the Bay Area for maximizing good outcomes out of serendepity. 
+Previously, I was running a drug business from a small town in East Germany and then moved to Berlin where I studied Applied Computer Science. During that time I worked at different companies. I lived in different group houses and met a lot of good friends. After my graduation, I moved now into the Bay Area for maximizing good outcomes out of serendipity. Really looking forward to this. 
 
-My email is [maxhager28@gmail.com](mailto:maxhager28@gmail.com).
+My email is [maxhager28@gmail.com](mailto:maxhager28@gmail.com) and my number [+4915253669280](https://wa.me/4915253669280). Please contact me!
 
 You can find me on:
 

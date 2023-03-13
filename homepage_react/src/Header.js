@@ -10,9 +10,11 @@ function Header() {
     <>
       <Navbar bg="blue" variant="dark" className="navbar">
         <Container className="navbar-container">
-          <Navbar.Brand href="#home" className="brand-name">
+        <LinkContainer to="/">
+          <Navbar.Brand className="brand-name">
             Max Hager
           </Navbar.Brand>
+          </LinkContainer>
           <Nav>
             <LinkContainer to="/">
               <a className="categorie">About</a>
@@ -26,7 +28,7 @@ function Header() {
             <LinkContainer to="/subscription">
             <a className="categorie">Subscribe</a>
             </LinkContainer>
-            <a className="categorie">
+            <a className="categorie" href="https://twitter.com/MaxHager66">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"

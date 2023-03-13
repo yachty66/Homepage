@@ -113,16 +113,15 @@ Personal homepage where I share informations about myself, posts and the project
 - [x] when reload on subdomain it shouldnt happen an error 
 
 - [x] change color of links from about page to yellow if clicked 
-- [ ] add handpointer for all clickable links
-- [ ] check grammatic on about page
-- [ ] check grammatic on projects page
-- [ ] on click of max hager go back to about site and not add #home if max hager is clicked
-- [ ] remove white hover from max hager 
-- [ ] add twitter 
-- [ ] change hover color submit button  
-- [ ] remove blue border around input button 
-- [ ] add icon and tabname
-- [ ] checkout how listing in google looks like and if necessary adjust 
+- [x] add handpointer for all clickable links 
+- [x] check grammatic on about page
+- [x] check grammatic on projects page
+- [x] on click of max hager go back to about site and not add #home if max hager is clicked
+- [x] remove white hover from max hager 
+- [x] add twitter 
+- [x] change hover color submit button  
+- [x] remove blue border around input button 
+- [x] add icon and tabname
 - [ ] Create readme which is describing each functionality like how the posts work and how the subscribe button works 
 
 ## Publishing

@@ -1,19 +1,19 @@
-The following overview is used from me to keep track off my projects. There are four segments: 
+The following overview is used from me to keep track of my projects. There are four segments: 
 
-- "Currently Doing" - the first bullet point for each item is the starting date and the second is the description. 
-- "Finished" - the first bullet point for each item is the starting date the second is the end date and the last one is the description. 
-- "Discontinued" - the first bullet point for each item is the starting date the second is the date when the project was discontinued and the last one is the description. 
+- "Currently Doing" - the first bullet point for each item is the starting date, and the second is the description. 
+- "Finished" - the first bullet point for each item is the starting date, the second is the end date and the last one is the description. 
+- "Discontinued" - the first bullet point for each item is the starting date, the second is the date when the project was discontinued, and the last one is the description. 
 - "Want To do" - description only. 
 
 I started this list in summer 2022 and paused some time. The list has several advantages: 
 
-1. Public commitment and pressure which as progress accelerator.
+1. Public commitment and pressure, which as progress accelerator.
 
 2. Staying on track for each of the projects.
 
 3. I like it to share the overview to friends to create interesting conversations or maybe getting someone to work together on something.
 
-If I can recognize a interest from other people I would like to create a application out of this idea where people can add there projects in a predefined form. Let me know if you are interested in something like that.
+If I can recognize an interest from other people, I would like to create an application out of this idea where people can add their projects in a predefined form. Let me know if you are interested in something like that.
 
 ## Currently doing
 
@@ -36,10 +36,6 @@ If I can recognize a interest from other people I would like to create a applica
 ### Homepage
 - 28.02.2023 
 - My personal homepage.
-
-### Daily Paper Summaries on Twitter
-- 07.03.2023
-- Summarizing paper on Twitter once a day. Inspiration via [@johannes_hage](https://twitter.com/johannes_hage).
 
 ## Finished
 
@@ -153,6 +149,11 @@ If I can recognize a interest from other people I would like to create a applica
 - N/A
 - Personal hompage in one markdown file in a book format. Serves as project overview. The theory is that probabilities to finish a project increase if the project is written down.
 
+### Daily Paper Summaries on Twitter
+- 07.03.2023
+- 09.03.2023
+- Summarizing paper on Twitter once a day. Inspiration via [@johannes_hage](https://twitter.com/johannes_hage).
+
 ## Discontinued
 
 ### Machine learning from scratch
@@ -196,7 +197,7 @@ If I can recognize a interest from other people I would like to create a applica
 - ["Der Gerät"](https://de.wikipedia.org/wiki/Der_Ger%C3%A4t) only cuts meat. The process could be fully automated so that employees are not necessary anymore. People could choose their menu via app and the "Döner" machine outputs it. Disrupting 1000 "Döner" shops alone in [Berlin](https://www.berlin.de/tourismus/insidertipps/2036421-2339440-doener-kebab-ist-eine-berliner-erfindung.html#:~:text=Berlin%20gilt%20als%20%C2%ABHauptstadt%20des,%C2%ABdie%20Hauptstadt%20des%20D%C3%B6ners%C2%BB.).
 
 ### Open source conversational speaker
-- Alexa is restricted in terms of open conversations because Amazon and co dont want to lose their image in the front of society if there speaker starts talking racist things for example. Alexa skills can be only hardcoded, i.e. responses on tricker need to be hardcoded. I would like to hold this more generic in a sense of providing a simple API for the speaker which works with Python in just a view lines - "If certain input X do Y".
+- Alexa is restricted in terms of open conversations because Amazon and co don't want to lose their image in the front of society if their speaker starts talking racist things, for example. Alexa's skills can be only hard-coded, i.e. responses on tricker need to be hard-coded. I would like to hold this more generic in a sense of providing a simple API for the speaker which works with Python in just a view lines  - "If certain input X do Y".
 - Some details:
     - [Whisper](https://github.com/openai/whisper) for converting language to text  
     - Huge language model for responses 
@@ -205,4 +206,4 @@ If I can recognize a interest from other people I would like to create a applica
 
 ### Goodreads for paper
 - People can track their paper like books get tracked on Goodreads
-- Making use of APIs of Zotero and Mendeley
+- Making use of Zotero and Mendeley API's 
